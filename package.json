@@ -1,0 +1,27 @@
+{
+  "name": "acmweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mista-j/acmWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mista-j/acmWebsite/issues"
+  },
+  "homepage": "https://github.com/mista-j/acmWebsite#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jshint": "^2.9.6",
+    "nodemon": "^1.18.4",
+    "path": "^0.12.7",
+    "underscore": "^1.9.1"
+  }
+}
