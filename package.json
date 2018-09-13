@@ -2,7 +2,7 @@
   "name": "acmweb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,9 +19,13 @@
   "homepage": "https://github.com/mista-j/acmWebsite#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "file-system": "^2.2.2",
     "jshint": "^2.9.6",
+    "morgan": "^1.9.1",
     "nodemon": "^1.18.4",
     "path": "^0.12.7",
-    "underscore": "^1.9.1"
+    "time-stamp": "^2.1.0",
+    "underscore": "^1.9.1",
+    "winston": "^3.1.0"
   }
 }
