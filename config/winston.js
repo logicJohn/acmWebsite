@@ -1,10 +1,9 @@
 var winston = require('winston');
-var path = require('path');
 
 
 var options = {
     file: {
-      level: 'info',
+      level: 'silly',
       filename: `./logs/app.log`,
       handleExceptions: true,
       json: true,
