@@ -6,8 +6,10 @@ const path = require('path');
 const morgan = require('morgan');
 const fs = require('file-system');
 
+
+
 //log is personally written to test out different logging levels
-//const log = require('./modules/logger.js');
+const log = require('./modules/logger.js');
 const winston = require('./config/winston');
 
 
@@ -34,8 +36,6 @@ app.get('/', (req, res, next) => {
 
             res.send('hello World\n');
             //res.sendFile(data);
-
-            
         }
     });  
 
@@ -47,7 +47,7 @@ app.get('/', (req, res, next) => {
 const port = (process.env.PORT || 3000);
 const myhost = '0.0.0.0';
 app.listen(port, myhost, ()  => {
-    //log.msg(`Website is listening at http://${myhost}:${port}...`);
-    console.log("hello world");
+    log.msg(`Website is listening at http://${myhost}:${port}...`);
+    
 });
 
