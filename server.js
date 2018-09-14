@@ -18,15 +18,16 @@ const app = express();
 
 app.use(morgan('[:date[clf]] :remote-addr - :remote-user  ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent" ', { stream: winston.stream }));
 
-app.set(express.static(__dirname + '/pages'));
-express.static(__dirname + '/styles');
-express.static(__dirname + '/images');
+
+//router
+app.use(express.static(__dirname + '/public'));
+
 
 app.get('/', (req, res, next) => {
     winston.info('request app.get \\ req');
     //res.sendFile(path.join(__dirname + '/pages/index.html'));
 
-    fs.readFile(__dirname + '/pages/index.html', (err, data) => {
+    fs.readFile(__dirname + '/public/pages/index.html', (err, data) => {
         
         if (err) {
             winston.info(err);
@@ -34,8 +35,8 @@ app.get('/', (req, res, next) => {
         }
         else {
 
-            res.send('hello World\n');
-            //res.sendFile(data);
+            //res.send('hello World\n');
+            res.sendFile(path.join(__dirname+'/public/pages/index.html'));
             winston.info('request app.get \\ res');
         }
     });  
@@ -45,11 +46,11 @@ app.get('/', (req, res, next) => {
 
 
 //PORT AND HOST MY NEED TO BE CHANGED FOR DOCKERFILE
-const port = (process.env.PORT || 3000);
+const port = (process.env.PORT || 4000);
 const myhost = '0.0.0.0';
 app.listen(port, myhost, ()  => {
     winston.info(`Website is listening at http://${myhost}:${port}...`);
-    log.msg(`Website is listening at http://${myhost}:${port}...`);
+    //log.msg(`Website is listening at http://${myhost}:${port}...`);
     
 });
 
