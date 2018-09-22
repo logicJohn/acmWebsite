@@ -4,7 +4,7 @@ const path = require('path');
 
 const appDir = path.dirname(require.main.filename)
 
-//router.use(express.static('../public/'));
+router.use(express.static('../public/'));
 
 router.get('/', (req, res) => {
     //res.send('Hello World!');
@@ -21,7 +21,7 @@ router.get('/events', (req,res) => {
     res.sendFile(appDir + '/public/pages/events.html');
 });
 
-router.get('/memebers', (req,res) => {
+router.get('/members', (req,res) => {
     res.sendFile(appDir + '/public/pages/members.html');
 });
 //router.post('/', (req, res) => {});
