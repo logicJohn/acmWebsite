@@ -13,8 +13,16 @@ router.get('/', (req, res) => {
 });
 
 
-router.get('/about', (req, res) => {
-    res.sendFile(appDir + '/public/pages/about.html');
+router.get('/mission', (req, res) => {
+    res.sendFile(appDir + '/public/pages/mission.html');
+});
+
+router.get('/events', (req,res) => {
+    res.sendFile(appDir + '/public/pages/events.html');
+});
+
+router.get('/memebers', (req,res) => {
+    res.sendFile(appDir + '/public/pages/members.html');
 });
 //router.post('/', (req, res) => {});
 
