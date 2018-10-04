@@ -1,0 +1,131 @@
+h1.major
+{
+	font-size: 40px;
+}
+p.minor
+{
+	font-size: 30px;
+}
+div.aboutJumbotron
+{
+	background: url(../images/circuit.png) top center;
+	background-blend-mode:overlay;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: .85;
+	margin-top: 7%;
+	padding-top: 10em;
+	padding-bottom: 20em;
+}
+div.eventsJumbotron
+{
+	background: url(../images/eventsBG.jpg) top center;
+	background-blend-mode:overlay;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: .70;
+	margin-top: 7%;
+	padding-bottom: 45em;
+}
+div.officersJumbotron
+{
+	background: url(../images/officersBG.jpg) top center;
+	background-blend-mode:overlay;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: .89;
+	margin-top: 7%;
+	padding-bottom: 28em;
+}
+div.officersDiv
+{
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+a.acmLogo
+{
+	padding-left: 1%;
+}
+div.eventContainer
+{
+	margin-left: 18%;
+	margin-right: 18%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+div.eventCard
+{
+	margin-bottom: 5%;
+}
+img.ecuLogo
+{
+	padding-top: 10%;
+}
+.navbar
+{
+	font-size: 35px;
+}
+h2.landingTitle
+{
+	font-size: 80px;
+}
+
+
+/** Hover effect for the Events Page's event cards**/
+
+  
+  .hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+  }
+  
+  .hovereffect:hover .overlay {
+	background-color: rgba(170,170,170,0.4);
+  }
+  
+  .hovereffect h2, .hovereffect img {
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+  }
+  
+  .hovereffect img {
+	display: block;
+	position: relative;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+  }
+  
+  .hovereffect:hover img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+  }
+  
+  .hovereffect h2 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.6);
+  }
+  
+/** End of Hover Effect CSS**/
+

@@ -1,172 +1,105 @@
  
 <!DOCTYPE html>
-<!-- Home, Bio Blog School Projects Resume & CV -->
 <html lang="en">
 
 
 <head>
-  <title>ACM@ECU</title>
+  <title>Events Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 
 
-<body id="myPage" class="mainStyle" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" class="mainStyle is-preload" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">ACM@ECU</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item "> 
-        <a class="nav-link" href="/">Home </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mission">Mission</a>
-      </li>
-      <li class = "nav-item active">
-        <a class = "nav-link" href="events"> Events </a>
-      <li class="nav-itm">
-        <a class="nav-link" href="members">Members</a>
-      </li>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+          <a class="navbar-brand acmLogo" href="index.html">
+            <img src="../images/acmLogo.PNG" width="80" height="80" class="d-inline-block align-top" alt="">
+              </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         
-    </ul>
-    
-  </div>
-</nav>
+          <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"> 
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mission.html">About Us</a>
+              </li>
+              <li class = "nav-item active">
+                <a class = "nav-link" href="events.html"> Events </a>
+              <li class="nav-itm">
+                <a class="nav-link" href="members.html">Officers</a>
+              </li>
+                
+            </ul>
+            
+          </div>
+        </nav>
 
 <!--- copy the above to each page --->
-
-
-<!--- #TODO: add image, add top margin to clear from navbar, adjust size --->
-<div class="jumbotron" style = "margin-top:40px">
-  <h1 class="display-4 text-center">ACM @ ECU</h1>
-  <p class = "text-center"> This is some text for the jumbotron</p>
+<div class="jumbotron eventsJumbotron">
 </div>
-
-<div class = "container">
-    <div class = "row">
-        <div class = "col-lg-8 col-mid-19 mx-auto" >
-            
-            
            <!--- the order on this page for events needs to be from future to past --->
             <!--- if the page gets to long we can archive edit part of it later --->
             <!--- each event needs an id tag to be used on the index.html page lowercase --->
-            <hr>
-            
-            <div class = "">
+            <div class="eventContainer">
                 
-                    <h2>
-                        HackDuke
-                    </h2>
-                    <h3>
-                        Duke University Hackathon
-                    </h3>
-                    <p>
-                        TBA
-                    <p>
-                
+                <div class="inner">
+                    <h1 class="major">Events Catalog</h1>
+                    <section class="features">
+
+                    <article class="hovereffect">
+                      <a href="https://hacknc.com/" class="image"><img src="../images/hackncLogo2.jpg" alt="" /></a>
+                      <h3 class="major">HackNC</h3>
+                      <p>HackNC is a hackathon that will take place at UNC Chapel Hill on October 7-8. Registration is free, but if you have not signed up yet please do so as soon as possible!</p>
+                      <a href="https://hacknc.com/" class="special">Learn more</a>
+                    </article>
+
+                    <article class="hovereffect">
+                      <a href="https://hackduke.org/" class="image"><img src="../images/hackdukeLogo.jpg" alt="" /></a>
+                      <h3 class="major">HackDuke</h3>
+                      <p>HackDuke is a hackathon that will take place at Duke University on October 13-14. Registration is free, but if you have not signed up yet please do so as soon as possible!</p>
+                      <a href="https://hackduke.org/" class="special">Learn more</a>
+                    </article>
+
+                    <article class="hovereffect"> 
+                      <a href="http://www.ecu.edu/cs-acad/admissions/openhouse/" class="image"><img src="../images/cupolaPic.jpg" alt="" /></a>
+                      <h3 class="major">Fall Open House 2018</h3>
+                      <p>On October 27th ECU will be hosting open house for prospective students. ACM will be there to represent the club. The event will take place at the Student Rec Center from 8 a.m. - 11:30 a.m.</p>
+                      <a href="http://www.ecu.edu/cs-acad/admissions/openhouse/" class="special">Learn more</a>
+                    </article>
+
+                    <article class="hovereffect"> 
+                      <a href="" class="image"><img src="../images/pic07.jpg" alt="" /></a>
+                      <h3 class="major">TBA</h3>
+                      <p>TBA</p>
+                      <a href="" class="special">Learn more</a>
+                    </article>
+
+                    <article class="hovereffect"> 
+                      <a href="" class="image"><img src="../images/pic07.jpg" alt="" /></a>
+                      <h3 class="major">TBA</h3>
+                      <p>TBA</p>
+                      <a href="" class="special">Learn more</a>
+                    </article>
+
+                    <article class="hovereffect"> 
+                      <a href="" class="image"><img src="../images/pic07.jpg" alt="" /></a>
+                      <h3 class="major">TBA</h3>
+                      <p>TBA</p>
+                      <a href="" class="special">Learn more</a>
+                    </article>  
+
+                    </section>
+                    </div>
+                    </section>
+
             </div>
-            
-            <hr>
-            
-            <div class = "">
-                
-                    <h2>
-                        HackNC
-                    </h2>
-                    <h3>
-                        University Chapel Hill Hackathon
-                    </h3>
-                    <p>
-                        TBA
-                    <p>
-               
-            </div>
-            
-            <hr>
-            
-            
-            <div class = "">
-                
-                    <h2>
-                        HackNC
-                    </h2>
-                    <h3>
-                        University Chapel Hill Hackathon
-                    </h3>
-                    <p>
-                        TBA
-                    <p>
-               
-            </div>
-            
-            <hr>
-            
-            <div class = "">
-                
-                    <h2>
-                        HackNC
-                    </h2>
-                    <h3>
-                        University Chapel Hill Hackathon
-                    </h3>
-                    <p>
-                        TBA
-                    <p>
-               
-            </div>
-            
-            <hr>
-            
-            <div class = "">
-                
-                    <h2>
-                        HackNC
-                    </h2>
-                    <h3>
-                        University Chapel Hill Hackathon
-                    </h3>
-                    <p>
-                        TBA
-                    <p>
-               
-            </div>
-            
-            <hr>
-            
-            <div id = "hacknc" class = "">
-                
-                    <h2>
-                        HackNC
-                    </h2>
-                    <h3>
-                        University NC hackathon
-                    </h3>
-                    <p>
-                        TBA
-                    <p>
-                
-            </div>
-            
-            
-            <hr>
-            
-            <div class = "">
-                <a href = "">
-                    <h5 class = "center">
-                        Check us out at ECU ORGSYNC
-                    </h5>    
-                </a>
-            </div>
-            
-            
-        </div>
-</div>
+                    
 
 
 
@@ -189,7 +122,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 <!-- personal css -->
-<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="../styles/style.css">
+
+<!-- Template CSS-->
+<link rel="stylesheet" href="../assets/css/main.css" />
+<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
 
 </body>
 

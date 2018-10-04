@@ -1,11 +1,10 @@
  
 <!DOCTYPE html>
-<!-- Home, Bio Blog School Projects Resume & CV -->
 <html lang="en">
 
 
 <head>
-  <title>ACM@ECU</title>
+  <title>About Us Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
@@ -15,7 +14,9 @@
 <body id="myPage" class="mainStyle" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">ACM@ECU</a>
+  <a class="navbar-brand acmLogo" href="index.html">
+    <img src="../images/acmLogo.PNG" width="80" height="80" class="d-inline-block align-top" alt="">
+      </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -23,82 +24,85 @@
   <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item "> 
-        <a class="nav-link" href="/">Home </a>
+        <a class="nav-link" href="index.html">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="mission">Mission</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="mission.html">About Us</a>
       </li>
       <li class = "nav-item">
-        <a class = "nav-link" href="events"> Events </a>
+        <a class = "nav-link" href="events.html"> Events</a>
       <li class="nav-itm ">
-        <a class="nav-link" href="members">Members</a>
+        <a class="nav-link" href="members.html">Officers</a>
       </li>
-        
     </ul>
     
   </div>
 </nav>
 
 <!--- copy the above to each page --->
+<div class="jumbotron aboutJumbotron">
 
 
-<!--- #TODO: add image, add top margin to clear from navbar, adjust size --->
-<div class="jumbotron" style = "margin-top:40px">
-  <h1 class="display-4 text-center">ACM @ ECU</h1>
-  <p class = "text-center"> This is some text for the jumbotron</p>
+<!-- INSERT BG PICTURE HERE USING BOOTSTRAP CLASS -->
+
+
+
+
+
+
+
 </div>
 
 <div class = "container">
     <div class = "row">
         <div class = "col-lg-8 col-mid-19 mx-auto" >
-            
-            <!---  #TODO need to alter the container so we can have a pic to the right of each cell --->
-            <div class = "">
-                
+                    <hr>
                     <h2>
-                        Mission
+                        What is ACM?
                     </h2>
-                    <h3>
-                        To do stuff
-                    </h3>
-                    <p>
-                        TBA
-                    <p>
-               
-            </div>
-            
-            <hr>
+                    <h4>
+                        The Association of Computing Machinery (ACM) is the world's largest educational and scientific computing society, delivering resources that advance computing as a science and a profession.
+                         ACM provides the computing field's premier Digital Library and serves its members and the computing profession with leading-edge publications, conferences, and career resources.
+                    </h4>
+                    <hr>
            
-           <div class = "">
-                
                     <h2>
-                        Plans
+                        What We Offer Our Members
                     </h2>
-                    <h3>
-                        Do stuff 
-                    </h3>
-                    <p>
-                        TBA
-                    <p>
-                
-            </div>
-            
+                    <h4>
+                      The East Carolina University ACM Student Chapter strives to provide a community whereby those with a common interest in computing are encouraged to work
+                       together and learn from each other while preparing for careers as computer professionals.
+                    </h4>        
             <hr>
-            
-           
-            
-            <!--- #TODO I don't think we need this on every page... need to make that decision later--->
-            <div class = "">
-                <a href = "">
-                    <h5 class = "center">
-                        Check us out at ECU ORGSYNC
-                    </h5>    
-                </a>
-            </div>
-            
-            
-        </div>
-</div>
+  
+              <h2>
+                 Hackathons
+              </h2>
+              <h4>
+                The ECU ACM Chapter occasionally participates in local Hackathons that are hosted each semester. We offer rides for those don't have cars, and also offer quick meetings before these events to go over what one should do if they
+                have never been to a Hackathon before. At these events members will be able to work together to create things such as Web / Mobile Applications and have fun working together. In addition to that, this is also a good oppurtunity 
+                for members to netowrk with the present companies that typically show up at Hackathons for a chace at landing an interview for a job or internship. 
+              </h4>        
+           <hr>
+
+              <h2>
+                Workshops
+              </h2>
+              <h4>
+                The club also hosts workshops during both the Fall and Spring semesters to teach members of the club new technologies such as NodeJS or AngularJS so that they can implement these into their own personal / work projects.
+                We want our members to be well equipped prior to graduation, so we host these events so that we can prepare them efficiently for what's expected of them after graduation.      
+              </h4>        
+            <hr>
+
+            <h2>
+              Guest Speakers
+            </h2>
+            <h4>
+              Guest speakers will also make appearances to talk about various things such as their own project, or even to inform prospective attendees about a specific technology.
+            </h4>        
+                  <hr>
+                  </div>
+          </div>
 
 
 
@@ -121,7 +125,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 <!-- personal css -->
-<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="../styles/style.css">
+
+<!-- Template CSS-->
+<link rel="stylesheet" href="../assets/css/main.css" />
+<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
 
 </body>
 
