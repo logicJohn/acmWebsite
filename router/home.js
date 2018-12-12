@@ -1,34 +1,30 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const path = require('path');
+const path = require("path");
 
-const appDir = path.dirname(require.main.filename)
+const appDir = path.dirname(require.main.filename);
 
-router.use(express.static('../public/'));
+router.use(express.static(appDir + "/public/"));
 
-router.get('/', (req, res) => {
-    //res.send('Hello World!');
-    res.sendFile(appDir + '/public/pages/index.html');
-    ;
+router.get("/", (req, res) => {
+  //res.send('Hello World!');
+  res.sendFile(appDir + "/public/pages/index.html");
 });
 
-
-router.get('/mission', (req, res) => {
-    res.sendFile(appDir + '/public/pages/mission.html');
+router.get("/mission", (req, res) => {
+  res.sendFile(appDir + "/public/pages/mission.html");
 });
 
-router.get('/events', (req,res) => {
-    res.sendFile(appDir + '/public/pages/events.html');
+router.get("/events", (req, res) => {
+  res.sendFile(appDir + "/public/pages/events.html");
 });
 
-router.get('/members', (req,res) => {
-    res.sendFile(appDir + '/public/pages/members.html');
+router.get("/members", (req, res) => {
+  res.sendFile(appDir + "/public/pages/members.html");
 });
 //router.post('/', (req, res) => {});
 
 module.exports = router;
-
-
 
 /*
 
