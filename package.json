@@ -1,31 +1,23 @@
 {
-  "name": "acmweb",
+  "name": "acmwebsite",
   "version": "1.0.0",
-  "description": "",
+  "description": "The 2nd version of the ACM Website.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mista-j/acmWebsite.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Isaiah Binford",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mista-j/acmWebsite/issues"
-  },
-  "homepage": "https://github.com/mista-j/acmWebsite#readme",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "file-system": "^2.2.2",
-    "jshint": "^2.9.6",
+    "jshint": "^2.9.7",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.4",
+    "nodemon": "^1.18.9",
     "path": "^0.12.7",
-    "time-stamp": "^2.1.0",
+    "time-stamp": "^2.2.0",
     "underscore": "^1.9.1",
-    "winston": "^3.1.0"
+    "winston": "^3.2.1"
   }
 }
