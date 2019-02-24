@@ -655,6 +655,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 # About Section
 --------------------------------------------------------------*/
 
+#days,#hours,#minutes,#seconds {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#timer {
+  text-align: center;
+  padding-top:  10px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  margin: auto;
+  background-color: rgba(255, 71, 48, 0.75);
+  border-radius: 25px;
+}
+
 #about {
   background: url("../img/about-bg.jpg");
   background-size: cover;
@@ -1090,7 +1107,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-right: 1px solid #e0e5fa;
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
-  background: #7d46cb;
+  background:rgba(66, 62, 66, 0.6);
   height: 160px;
 }
 
@@ -1622,6 +1639,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #schedule .nav-tabs a {
     padding: 8px 60px;
+  }
+
+  #timer {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
