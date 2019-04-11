@@ -1,4 +1,4 @@
-var eventDate = new Date("Apr 6, 2019 8:00:00").getTime();
+var eventDate = new Date("Apr 13, 2019 8:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = eventDate - now;
